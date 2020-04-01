@@ -7,18 +7,26 @@ namespace Advanced_Concepts.AsyncProgramming
 {
     public class Download
     {
+        // await keyword tells compiler to move on, this task will take time
+        // if you use await keyword, method should be async Task
 
-        //Asynchronous Method
+        //Asynchronous Methods
         public async Task DownloadHtmlAsync(string url)
         {
             var webClient = new WebClient();
-            var html = await webClient.DownloadStringAsync(Uri.EscapeUriString(url));
+            var html = await webClient.DownloadStringTaskAsync((url));
 
             using (var streamWriter = new StreamWriter("/Users/office/Desktop/test.html"))
             {
-                streamWriter.Write(html);
+               await streamWriter.WriteAsync(html);
             }
 
+        }
+
+        public async Task<string> GetHtmlAsync(string url)
+        {
+            var webClient = new WebClient();
+            return await webClient.DownloadStringTaskAsync(url);
         }
 
 
@@ -33,6 +41,12 @@ namespace Advanced_Concepts.AsyncProgramming
                 streamWriter.Write(html);
             }
             
+        }
+
+        public string GetHtml(string url)
+        {
+            var webClient = new WebClient();
+            return webClient.DownloadString(url);
         }
 
     }
