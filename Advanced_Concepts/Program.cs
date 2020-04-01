@@ -79,15 +79,14 @@ namespace Advanced_Concepts
 
             #region Dynamic
 
-            //Dynamic data typesw were introduced in .NET 4
-            //Console.WriteLine("------- Starting Dynamic ---------");
+            Console.WriteLine("------- Starting Dynamic ---------");
 
             //Normal way
             object obj = "Ubaid";
 
             //With Reflection
-            var methodInfo = obj.GetType().GetMethod("GetHashCode");
-            methodInfo.Invoke(null, null);
+            //var methodInfo = obj.GetType().GetMethod("GetHashCode");
+            //methodInfo.Invoke(null, null);
 
             //With Dynamic
             dynamic testInt= 10;
@@ -95,8 +94,8 @@ namespace Advanced_Concepts
             //excelObject.Optimize();
 
             dynamic testSecondInt = 20;
-            //var result = testInt + testSecondInt;
-            //Console.WriteLine("The result: " + result );
+            object result = testInt + testSecondInt;
+            Console.WriteLine("The result: " + result.GetType() );
             #endregion
 
             #region Exception Handling
