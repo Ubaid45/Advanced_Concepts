@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Advanced_Concepts.Delegates;
+using Advanced_Concepts.EventsandDelegates;
 using Advanced_Concepts.ExtensionMethods;
 using Advanced_Concepts.LamdaExpressions;
 
@@ -101,6 +102,16 @@ namespace Advanced_Concepts
             #region Events and Delegates
 
             Console.WriteLine("------- Starting Events and Delegates ---------");
+
+            var video = new Video() { Title = "Video 1" };
+            var videoEncoder = new VideoEncoder(); // Publisher
+            var mailService = new MailService(); // Subscriber
+            var messageService = new MessageService(); // Subscriber
+
+            videoEncoder.VideoEncoded += mailService.OnVideoEncoded; // Binding the event
+            videoEncoder.VideoEncoded += messageService.OnVideoEncoded; // Binding the event
+
+            videoEncoder.Encode(video);
 
             #endregion
 
