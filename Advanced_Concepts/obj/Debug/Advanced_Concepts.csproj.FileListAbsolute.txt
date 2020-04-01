@@ -1,6 +1,6 @@
+/Users/office/Projects/Advanced_Concepts/Advanced_Concepts/obj/Debug/Advanced_Concepts.csproj.CoreCompileInputs.cache
 /Users/office/Projects/Advanced_Concepts/Advanced_Concepts/bin/Debug/Advanced_Concepts.exe
 /Users/office/Projects/Advanced_Concepts/Advanced_Concepts/bin/Debug/Advanced_Concepts.pdb
-/Users/office/Projects/Advanced_Concepts/Advanced_Concepts/obj/Debug/Advanced_Concepts.csprojAssemblyReference.cache
-/Users/office/Projects/Advanced_Concepts/Advanced_Concepts/obj/Debug/Advanced_Concepts.csproj.CoreCompileInputs.cache
 /Users/office/Projects/Advanced_Concepts/Advanced_Concepts/obj/Debug/Advanced_Concepts.exe
 /Users/office/Projects/Advanced_Concepts/Advanced_Concepts/obj/Debug/Advanced_Concepts.pdb
+/Users/office/Projects/Advanced_Concepts/Advanced_Concepts/obj/Debug/Advanced_Concepts.csprojAssemblyReference.cache

@@ -13,11 +13,11 @@ namespace Advanced_Concepts.LamdaExpressions
         {
             return new List<Book>
             {
-                new Book(){Title = "Title 1", Price = 5},
-                new Book(){Title = "Title 2", Price = 50},
-                new Book(){Title = "Title 3", Price = 53},
-                new Book(){Title = "Title 4", Price = 35},
-                new Book(){Title = "Title 5", Price = 25}
+                new Book(){Title = "Design Patterns", Price = 5},
+                new Book(){Title = "Fundamentals of c#", Price = 50},
+                new Book(){Title = "Java Basics", Price = 53},
+                new Book(){Title = "Introduction to JS", Price = 35},
+                new Book(){Title = "Mastering React JS", Price = 25}
             };
         }
     }

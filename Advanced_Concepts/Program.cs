@@ -69,6 +69,33 @@ namespace Advanced_Concepts
 
             Console.WriteLine("------- Starting LINQ ---------");
 
+            // LINQ Query Operators
+
+            var cheapBooksAgain = from b in books
+                                    where b.Price < 30
+                                    orderby b.Title
+                                    select b.Title;
+
+
+            // LINQ Extension Methods
+            cheapBooksAgain = books
+                        .Where(b => b.Price < 30)
+                        .OrderBy(b => b.Title)
+                        .Select(b => b.Title);
+            Console.WriteLine("Books having price less than 30$: ");
+            foreach (var book in cheapBooksAgain)
+            {
+                Console.WriteLine(book);
+            }
+
+            var lastThreeBooks = books.Skip(2).Take(3);
+
+            Console.WriteLine("Last three books: ");
+            foreach (var book in lastThreeBooks)
+            {
+                Console.WriteLine(book.Title);
+            }
+
             #endregion
 
             #region Events and Delegates
