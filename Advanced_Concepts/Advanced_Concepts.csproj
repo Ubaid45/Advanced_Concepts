@@ -35,12 +35,15 @@
     <Compile Include="Delegates\Photo.cs" />
     <Compile Include="Delegates\PhotoFilters.cs" />
     <Compile Include="Delegates\PhotoProcessor.cs" />
-    <Compile Include="Geenrics\Utilities.cs" />
-    <Compile Include="Geenrics\Product.cs" />
+    <Compile Include="Generics\Utilities.cs" />
+    <Compile Include="Generics\Product.cs" />
+    <Compile Include="Lamda Expressions\BookRepository.cs" />
+    <Compile Include="Lamda Expressions\Book.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Delegates\" />
-    <Folder Include="Geenrics\" />
+    <Folder Include="Generics\" />
+    <Folder Include="Lamda Expressions\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
