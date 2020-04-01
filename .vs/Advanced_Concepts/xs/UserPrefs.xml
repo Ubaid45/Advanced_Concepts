@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{F81B8E03-7910-4E15-8703-302326A2BF5E}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Advanced_Concepts/Program.cs" Line="11" Column="13" />
       <File FileName="Advanced_Concepts/Delegates/Photo.cs" Line="13" Column="49" />
       <File FileName="Advanced_Concepts/Delegates/PhotoFilters.cs" Line="16" Column="39" />
-      <File FileName="Advanced_Concepts/Delegates/PhotoProcessor.cs" Line="11" Column="42" />
+      <File FileName="Advanced_Concepts/Delegates/PhotoProcessor.cs" Line="11" Column="1" />
+      <File FileName="Advanced_Concepts/Geenrics/Utilities.cs" Line="22" Column="74" />
+      <File FileName="Advanced_Concepts/Geenrics/Product.cs" Line="7" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Advanced_Concepts" expanded="True" selected="True">
-            <Node name="Advanced_Concepts" expanded="True">
+          <Node name="Advanced_Concepts" expanded="True">
+            <Node name="Advanced_Concepts" expanded="True" selected="True">
               <Node name="Delegates" expanded="True" />
+              <Node name="Geenrics" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -22,9 +24,7 @@
   <MonoDevelop.Ide.ItemProperties.Advanced__Concepts PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/office/Projects/Advanced_Concepts/Advanced_Concepts/Delegates/PhotoProcessor.cs" relfile="Advanced_Concepts/Delegates/PhotoProcessor.cs" line="11" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -35,9 +35,12 @@
     <Compile Include="Delegates\Photo.cs" />
     <Compile Include="Delegates\PhotoFilters.cs" />
     <Compile Include="Delegates\PhotoProcessor.cs" />
+    <Compile Include="Geenrics\Utilities.cs" />
+    <Compile Include="Geenrics\Product.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Delegates\" />
+    <Folder Include="Geenrics\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

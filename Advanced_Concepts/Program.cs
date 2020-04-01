@@ -8,6 +8,16 @@ namespace Advanced_Concepts
     {
         public static void Main(string[] args)
         {
+            #region Generics
+
+            var number = new Nullable<int>(0);
+            Console.WriteLine("Has Value: "+ number.HasValue);
+            Console.WriteLine("Value: " + number.GetValueOrDefault());
+
+            #endregion
+
+            #region Delegates
+            // Use for extesibility and flexibility
             var processor = new PhotoProcessor();
             var photoFilters = new PhotoFilters();
 
@@ -16,6 +26,7 @@ namespace Advanced_Concepts
             filterHandler += RemoveRedEye;
 
             processor.Process("Photos.jpg", filterHandler);
+            #endregion
         }
 
         public static void RemoveRedEye(Photo photo)
