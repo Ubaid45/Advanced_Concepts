@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Advanced_Concepts.AsyncProgramming;
 using Advanced_Concepts.Delegates;
 using Advanced_Concepts.EventsandDelegates;
 using Advanced_Concepts.ExtensionMethods;
@@ -145,6 +146,9 @@ namespace Advanced_Concepts
             #region Async and Await
 
             Console.WriteLine("------- Starting Async and Await ---------");
+
+            var download = new Download();
+            download.DownloadHtml("https://msdn.microsoft.com");
 
             #endregion
         }
