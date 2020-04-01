@@ -39,11 +39,13 @@
     <Compile Include="Generics\Product.cs" />
     <Compile Include="Lamda Expressions\BookRepository.cs" />
     <Compile Include="Lamda Expressions\Book.cs" />
+    <Compile Include="Extension Methods\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Delegates\" />
     <Folder Include="Generics\" />
     <Folder Include="Lamda Expressions\" />
+    <Folder Include="Extension Methods\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
