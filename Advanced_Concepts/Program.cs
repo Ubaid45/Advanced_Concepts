@@ -77,16 +77,26 @@ namespace Advanced_Concepts
 
             #endregion
 
-            #region Nullable types
-
-            Console.WriteLine("------- Starting Nullable types ---------");
-
-            #endregion
-
             #region Dynamic
 
-            Console.WriteLine("------- Starting Dynamic ---------");
+            //Dynamic data typesw were introduced in .NET 4
+            //Console.WriteLine("------- Starting Dynamic ---------");
 
+            //Normal way
+            object obj = "Ubaid";
+
+            //With Reflection
+            var methodInfo = obj.GetType().GetMethod("GetHashCode");
+            methodInfo.Invoke(null, null);
+
+            //With Dynamic
+            dynamic testInt= 10;
+            //Although optimize is not defined, still no compile time error if you uncomment
+            //excelObject.Optimize();
+
+            dynamic testSecondInt = 20;
+            //var result = testInt + testSecondInt;
+            //Console.WriteLine("The result: " + result );
             #endregion
 
             #region Exception Handling
