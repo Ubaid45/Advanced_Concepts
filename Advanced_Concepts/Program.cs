@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Advanced_Concepts.AsyncProgramming;
 using Advanced_Concepts.Delegates;
 using Advanced_Concepts.EventsandDelegates;
+using Advanced_Concepts.Exceptionhandling;
 using Advanced_Concepts.ExtensionMethods;
 using Advanced_Concepts.LamdaExpressions;
 
@@ -14,11 +15,12 @@ namespace Advanced_Concepts
     {
         public static void Main(string[] args)
         {
+            
             #region Generics
 
             Console.WriteLine("------- Starting Generics ---------");
             var number = new Nullable<int>(0);
-            Console.WriteLine("Has Value: "+ number.HasValue);
+            Console.WriteLine("Has Value: " + number.HasValue);
             Console.WriteLine("Value: " + number.GetValueOrDefault());
 
             #endregion
@@ -128,28 +130,49 @@ namespace Advanced_Concepts
             //methodInfo.Invoke(null, null);
 
             //With Dynamic
-            dynamic testInt= 10;
+            dynamic testInt = 10;
             //Although optimize is not defined, still no compile time error if you uncomment
             //excelObject.Optimize();
 
             dynamic testSecondInt = 20;
             object result = testInt + testSecondInt;
-            Console.WriteLine("The result: " + result.GetType() );
+            Console.WriteLine("The result: " + result.GetType());
             #endregion
 
             #region Exception Handling
 
             Console.WriteLine("------- Starting Exception Handling ---------");
+            try
+            {
+                var a = 1;
+                var b = 0;
+                //var answer = a / b;
+                var api = new YoutubeApi();
+                var videos = api.GetVideos();
+                
+            }
 
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("You can't divide by 0");
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine("Argument is out of range.");
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception Message: " + ex.Message);
+                Console.WriteLine("Inner Exception Message: " + ex.InnerException.Message);
+            }
             #endregion
 
             #region Async and Await
 
-            Console.WriteLine("------- Starting Async and Await ---------");
-
             var download = new Download();
             download.DownloadHtml("https://msdn.microsoft.com");
-
+             
             #endregion
         }
 
