@@ -41,12 +41,23 @@
     <Compile Include="Lamda Expressions\BookRepository.cs" />
     <Compile Include="Lamda Expressions\Book.cs" />
     <Compile Include="Extension Methods\StringExtensions.cs" />
+    <Compile Include="Events and Delegates\Video.cs" />
+    <Compile Include="Events and Delegates\VideoEncoder.cs" />
+    <Compile Include="Events and Delegates\MailService.cs" />
+    <Compile Include="Events and Delegates\MessageService.cs" />
+    <Compile Include="Events and Delegates\VideoEventArgs.cs" />
+    <Compile Include="Async Programming\Download.cs" />
+    <Compile Include="Exception handling\YoutubeApi.cs" />
+    <Compile Include="Exception handling\YoutubeException.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Delegates\" />
     <Folder Include="Generics\" />
     <Folder Include="Lamda Expressions\" />
     <Folder Include="Extension Methods\" />
+    <Folder Include="Events and Delegates\" />
+    <Folder Include="Async Programming\" />
+    <Folder Include="Exception handling\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
